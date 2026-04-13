@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Site</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- LOGO -->
+		<div class="logo-corner">
+			<a href="#welcome" class="logo-brand">
+				<img src="assets/logo/logo.png" alt="Esnovum" class="logo-img" />
+			</a>
+		</div>
+
+		<!-- HERO / WELCOME SECTION -->
+		<section class="hero" id="welcome">
+			<div class="container">
+				<span class="approach-label">Architecture &amp; Design</span>
+				<h1>Es <span class="novum-faded">novum</span></h1>
+				<p>Contemporary living in a natural context.</p>
+				<div class="hero-buttons">
+					<a href="#about" class="btn btn-primary btn-lg">Approach</a>
+					<a href="#services" class="btn btn-primary btn-lg">Work</a>
+					<a href="#contact" class="btn btn-secondary btn-lg">Contact Us</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ABOUT SECTION -->
+		<section id="about" class="approach-section">
+			<div class="container">
+				<div class="approach-header">
+					<span class="approach-label">Our Approach</span>
+					<h2>Architecture as a Response</h2>
+					<div class="approach-divider"></div>
+				</div>
+				<div class="approach-text">
+					<p>Each project begins with its context. We approach architecture as a response to place — shaped by landscape, orientation, and the conditions of everyday life.</p>
+					<p>Our work is grounded in materiality, proportion and clarity. Natural textures, light and spatial flow are used to create environments that feel calm, balanced and intuitive.</p>
+					<p>Through a precise and considered process, we develop each project from concept to construction, ensuring consistency at every scale. The aim is to create spaces that are not only functional, but deeply connected to the way they are experienced and lived.</p>
+				</div>
+				<div class="approach-signature-block">
+					<div class="approach-sig-line"></div>
+					<p class="approach-signature">Eva Sofoulaki</p>
+					<span class="approach-sig-title">Architect Engineer NTUA &nbsp;·&nbsp; Crete &amp; Athens</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- SERVICES SECTION -->
+		<section id="services" class="approach-section">
+			<div class="container">
+				<div class="approach-header">
+					<span class="approach-label">What We Offer</span>
+					<h2>Work</h2>
+					<div class="approach-divider"></div>
+				</div>
+				<div class="grid grid-3">
+
+					<!-- Service One -->
+					<div class="service-card">
+						<div class="slideshow" id="slideshow-1">
+							<div class="slide active" style="background:#c9b99a;">
+								<div class="slide-content">
+									<span class="slide-icon">🎯</span>
+									<p>Strategy & Planning</p>
+								</div>
+							</div>
+							<div class="slide" style="background:#b8a88a;">
+								<div class="slide-content">
+									<span class="slide-icon">📐</span>
+									<p>Concept Design</p>
+								</div>
+							</div>
+							<div class="slide" style="background:#a89070;">
+								<div class="slide-content">
+									<span class="slide-icon">📈</span>
+									<p>Project Development</p>
+								</div>
+							</div>
+							<button class="slide-btn prev" onclick="moveSlide('slideshow-1', -1)">&#10094;</button>
+							<button class="slide-btn next" onclick="moveSlide('slideshow-1', 1)">&#10095;</button>
+							<div class="slide-dots">
+								<span class="dot active" onclick="goToSlide('slideshow-1', 0)"></span>
+								<span class="dot" onclick="goToSlide('slideshow-1', 1)"></span>
+								<span class="dot" onclick="goToSlide('slideshow-1', 2)"></span>
+							</div>
+						</div>
+						<div class="service-card-body">
+							<h3>Service One</h3>
+							<p>A brief description of this service and the value it brings to our clients.</p>
+						</div>
+					</div>
+
+					<!-- Service Two -->
+					<div class="service-card">
+						<div class="slideshow" id="slideshow-2">
+							<div class="slide active" style="background:#8a9e8a;">
+								<div class="slide-content">
+									<span class="slide-icon">🌿</span>
+									<p>Landscape Integration</p>
+								</div>
+							</div>
+							<div class="slide" style="background:#7a8e7a;">
+								<div class="slide-content">
+									<span class="slide-icon">💡</span>
+									<p>Light & Space</p>
+								</div>
+							</div>
+							<div class="slide" style="background:#6a7e6a;">
+								<div class="slide-content">
+									<span class="slide-icon">🏡</span>
+									<p>Residential Design</p>
+								</div>
+							</div>
+							<button class="slide-btn prev" onclick="moveSlide('slideshow-2', -1)">&#10094;</button>
+							<button class="slide-btn next" onclick="moveSlide('slideshow-2', 1)">&#10095;</button>
+							<div class="slide-dots">
+								<span class="dot active" onclick="goToSlide('slideshow-2', 0)"></span>
+								<span class="dot" onclick="goToSlide('slideshow-2', 1)"></span>
+								<span class="dot" onclick="goToSlide('slideshow-2', 2)"></span>
+							</div>
+						</div>
+						<div class="service-card-body">
+							<h3>Service Two</h3>
+							<p>A brief description of this service and the value it brings to our clients.</p>
+						</div>
+					</div>
+
+					<!-- Service Three -->
+					<div class="service-card">
+						<div class="slideshow" id="slideshow-3">
+							<div class="slide active" style="background:#9a8a7a;">
+								<div class="slide-content">
+									<span class="slide-icon">🏛️</span>
+									<p>Construction Oversight</p>
+								</div>
+							</div>
+							<div class="slide" style="background:#8a7a6a;">
+								<div class="slide-content">
+									<span class="slide-icon">📋</span>
+									<p>Technical Documentation</p>
+								</div>
+							</div>
+							<div class="slide" style="background:#7a6a5a;">
+								<div class="slide-content">
+									<span class="slide-icon">🔍</span>
+									<p>Detail & Precision</p>
+								</div>
+							</div>
+							<button class="slide-btn prev" onclick="moveSlide('slideshow-3', -1)">&#10094;</button>
+							<button class="slide-btn next" onclick="moveSlide('slideshow-3', 1)">&#10095;</button>
+							<div class="slide-dots">
+								<span class="dot active" onclick="goToSlide('slideshow-3', 0)"></span>
+								<span class="dot" onclick="goToSlide('slideshow-3', 1)"></span>
+								<span class="dot" onclick="goToSlide('slideshow-3', 2)"></span>
+							</div>
+						</div>
+						<div class="service-card-body">
+							<h3>Service Three</h3>
+							<p>A brief description of this service and the value it brings to our clients.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT SECTION -->
+		<section id="contact" class="approach-section">
+			<div class="container">
+				<div class="approach-header">
+					<span class="approach-label">Get In Touch</span>
+					<h2>Contact Us</h2>
+					<div class="approach-divider"></div>
+				</div>
+				<div class="contact-info">
+					<div class="contact-item">
+						<span class="contact-icon">📍</span>
+						<div>
+							<h4>Physical Address</h4>
+							<p>123 Esnovum Street, Suite 100<br />Cape Town, 8001, South Africa</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<span class="contact-icon">📞</span>
+						<div>
+							<h4>Phone</h4>
+							<p><a href="tel:+27210000000">+27 21 000 0000</a></p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<span class="contact-icon">✉️</span>
+						<div>
+							<h4>Email</h4>
+							<p><a href="mailto:info@esnovum.com">info@esnovum.com</a></p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<span class="contact-icon">📸</span>
+						<div>
+							<h4>Instagram</h4>
+							<p><a href="https://instagram.com/esnovum" target="_blank" rel="noopener noreferrer">@esnovum</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="container">
+				<p class="mb-0">&copy; 2026 Esnovum. All rights reserved.</p>
+			</div>
+		</footer>
+
+	<script src="assets/js/main.js"></script>
+	</body>
+</html>
